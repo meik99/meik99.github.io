@@ -24,12 +24,68 @@
       Please note that figures are not visible
       on small screens such as phones
     </p>
+    <p class="text-justify">
+      Source: <a href="https://github.com/meik99/CoffeeBank">CoffeeBank on GitHub</a><br>
+      APK: <a href="assets/binary/coffeebank/CoffeeBank.apk" download="CoffeeBank.apk">CoffeeBank.apk</a><br>
+    </p>
     <hr>
   </div>
 </div>
 
 <div class="row">
   <div class="col-12">
+    <h2 id="technology">Technologies Used</h2>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <h3>Android</h3>
+    <p class="text-justify">
+      An operating system from Google, that is mostly made  for smartphones and tablets.
+      This app uses Android as its target platform, the Android-SDK. It was developed
+      using the AndroidStudio IDE.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <h3>Kotlin</h3>
+    <p class="text-justify">
+      A JVM-based language, which removes the need for boiler plate code that
+      is needed when using Java. It also adds useful functionalities that are not
+      available in Java such as extension methods. Since it compiles to JVM byte code,
+      it is interchangeable with Java. Kotlin and Java can even be used in the same project.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <h3>Room</h3>
+    <p class="text-justify">
+      Room is a library from the Android Jetpack suit which helps with data manipulation
+      with a SQLite database, by providing ORM functionality and easier implementation
+      of entities and DAOs.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <h3>DataBinding and LiveData</h3>
+    <p class="text-justify">
+      The Android Jetpack suit also provides a library that enables the use
+      of data binding in Android applications. One-way as well as two-way data binding
+      is possible with it by using LiveData objects.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <h3>GSON</h3>
+    <p class="text-justify">
+      GSON is a JSON library by Google for Java. It can create JSON strings
+      from Java objects and can parse JSON strings to Java objects. Since Kotlin
+      and Java are interchangeable, it also works with Kotlin and this application.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <hr>
     <h2 id="usecase1">Buying Products</h2>
     <hr>
   </div>
@@ -268,7 +324,29 @@
 <div class="row">
   <div class="col-lg-6 col-md-12 col-sm-12">
     <p class="text-justify">
-      T.B.A.
+      The fifth use case was to enable an administrator to
+      create report of the last transactions. For practical
+      purposes and technical limitations the amount of
+      transactions that are exported as a report is limited
+      to the latest 1000 transactions sorted descending
+      by date.
+    </p>
+    <p class="text-justify">
+      When clicking on the 'Create Report' setting, the application
+      asks for permissions to write to the external storage, if it
+      does not have these permissions. If the permissions are granted,
+      a file-chooser is opened with an implicit intent, so that the
+      selection of a path is done by a system app and a directory
+      chooser hadn't had to be implemented.
+    </p>
+
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      A created report is a csv file. The columns are
+      Transaction Id, Date of the transaction, first- and surname
+      of the customer that created the transaction and the product, with
+      its price, that was bought.
     </p>
   </div>
 </div>
@@ -284,7 +362,33 @@
 <div class="row">
   <div class="col-lg-6 col-md-12 col-sm-12">
     <p class="text-justify">
-      T.B.A.
+      The sixth use case was to enable an administrator
+      to create a backup of customer, product and transaction
+      data. Facing the same limitations as other query implementations,
+      the backup of data is limited to the first 1000 customers,
+      the first 1000 products and the last 1000 transactions.
+    </p>
+    <p class="text-justify">
+      Similarly to creating a report, when creating a backup, the permission
+      to write to external storage is asked for and the location to save to
+      is chosen by an directory chooser, via an implicit intent. The backup
+      is then written as a json-object, consisting of the customers, products and
+      transactions, each as an array in the object.
+    </p>
+  </div>
+
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      When reading a backup, the location of the backup is asked for
+      by a directory chooser, via an implicit intent. Then the data is
+      deserialized from the json object and the respective arrays for
+      customers, products and transactions. By reading a backup, current
+      data that might be stored is deleted.
+    </p>
+    <p class="text-justify">
+      De- and serialization is done by using GSON, a JSON library by Google,
+      that automatically creates JSON-Objects from objects and also
+      that can also create objects from JSON-Objects.
     </p>
   </div>
 </div>
