@@ -1,0 +1,105 @@
+<div class="row mt-4">
+  <div class="col-12">
+    <h1>CoffeeBank</h1>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <p class="text-justify">
+      This app was created, to keep track of who bought what in
+      an employee kitchen environment.
+    </p>
+    <p class="text-justify">
+      Employees of a firm wanted a mostly informal way to track
+      credit that was built up when buying items such as a cup
+      of coffee or a snack bar. The cost of such a product was
+      not payed immediately after taking it, but was written
+      down on a tally sheet. Miscalculation of totals
+      and forgetting to write the consumption of a product
+      down was common. These problems were alleviated after
+      the introduction of this application.
+    </p>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h2 id="usecase1">Buying Products</h2>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      The first use case of this app was to enable customers
+      to buy products. To achieve this, a SQLite database was
+      added. The entities of which are displayed in Fig. 1.
+    </p>
+    <p class="text-justify">
+      To write data to the database and read from it, the Android
+      library "Room" was used, which is an OR-Mapper specifically
+      made for Android apps. The DAOs that were created, where
+      then encapsulated in facades, which are the connecting
+      classes between this database layer and other layers of
+      the application.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+    <img class="side-img" src="assets/img/coffeebank/er_diagramm.png" alt="ER-Diagramm of CoffeeBank"/>
+    <br>
+    Fig. 1: ER-Diagramm of CoffeeBank
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      To let users interact with the data and buy products,
+      two screens were added. One screen, as seen as in Fig. 2,
+      displays every customer that is registered in the app.
+      When a user clicks on a customer, the app navigates to
+      the second screen, as seen as in Fig. 3, where a product
+      can be bought by clicking on it. Notice that there is no form
+      of authentication, as the requirement for this process  was
+      to be easy and fast. Since the app is only used in a trusted environment,
+      e.g. an office kitchen, no authentication is needed.
+    </p>
+    <p class="text-justify">
+      When a product has been bought, its price is added to the customers
+      credit and its stock is decreased by one. After buying an item,
+      the app navigates back to the customer selection screen. The transaction
+      is then logged and saved in the database.
+    </p>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+    <img class="w-100" src="assets/img/coffeebank/customers.png" alt="Customer Listing">
+    <br>
+    Fig. 2: Listing of customers
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+    <img class="w-100" src="assets/img/coffeebank/products.png" alt="Product Listing">
+    <br>
+    Fig. 3: Listing of products
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+    <hr>
+    <h2 id="usecase2">Nullifying transactions</h2>
+    <hr>
+  </div>
+</div>
+
+
+<div class="row mt-5">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+    </p>
+  </div>
+</div>
