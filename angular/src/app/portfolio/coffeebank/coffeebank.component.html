@@ -20,6 +20,10 @@
       down was common. These problems were alleviated after
       the introduction of this application.
     </p>
+    <p class="text-justify">
+      Please note that figures are not visible
+      on small screens such as phones
+    </p>
     <hr>
   </div>
 </div>
@@ -47,7 +51,7 @@
       the application.
     </p>
   </div>
-  <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+  <div class="col-lg-6 col-md-12 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
     <img class="side-img" src="assets/img/coffeebank/er_diagramm.png" alt="ER-Diagramm of CoffeeBank"/>
     <br>
     Fig. 1: ER-Diagramm of CoffeeBank
@@ -75,12 +79,12 @@
     </p>
   </div>
 
-  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
     <img class="w-100" src="assets/img/coffeebank/customers.png" alt="Customer Listing">
     <br>
     Fig. 2: Listing of customers
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
     <img class="w-100" src="assets/img/coffeebank/products.png" alt="Product Listing">
     <br>
     Fig. 3: Listing of products
@@ -133,12 +137,12 @@
         </li>
       </ol>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
     <img class="w-100" src="assets/img/coffeebank/settings.png" alt="Settings">
     <br>
     Fig. 4: Settings
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
     <img class="w-100" src="assets/img/coffeebank/transactions.png" alt="Transaction Listing">
     <br>
     Fig. 5: Listing of transactions
@@ -149,7 +153,7 @@
 <div class="row mt-5">
   <div class="col-12">
     <hr>
-    <h2 id="usecase3">Modifying Customers</h2>
+    <h2 id="usecase3">Modifying Customers and Products</h2>
     <hr>
   </div>
 </div>
@@ -157,19 +161,131 @@
 <div class="row">
   <div class="col-lg-6 col-md-12 col-sm-12">
     <p class="text-justify">
-
+      The third use case was to enable an administrator to
+      modify customers and products. Be it adding, removing or updating them.
     </p>
-
+    <p class="text-justify">
+      The fields of a customer that had to be modifiable are
+      their first- and surname, as well as their balance and
+      their preferred color.
+    </p>
+    <p class="text-justify">
+      Changing values of a customer, in the list seen in Fig. 6, are
+      saved automatically in the database, without further user interaction.
+      Adding customers can be done by clicking the "+" button and filling
+      in the dialog that is seen in Fig. 7. Removing customers can be done
+      by clicking the 'Remove' button and accepting the following dialog
+      seen in Fig. 8.
+    </p>
+    <p class="text-justify">
+      By changing the customers color the background color of the customer
+      list items seen in Fig. 2 is changed according to the color. The font
+      color remains unchanged.
+    </p>
+    <p class="text-justify">
+      The fields of a product that had to be modifiable are
+      its name, stock and its price. Modifications of products,
+      adding, removing and updating, are done the same way as
+      modifications of customers. See Fig. 9, 10 and 11.
+    </p>
   </div>
-  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-<!--    <img class="w-100" src="assets/img/coffeebank/settings.png" alt="Settings">-->
-<!--    <br>-->
-<!--    Fig. 4: Settings-->
-<!--  </div>-->
-<!--  <div class="col-lg-3 col-md-6 col-sm-12 text-center">-->
-<!--    <img class="w-100" src="assets/img/coffeebank/transactions.png" alt="Transaction Listing">-->
-<!--    <br>-->
-<!--    Fig. 5: Listing of transactions-->
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/customer_settings.png" alt="Customer Settings">
+    <br>
+    Fig. 6: Customer Settings
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/add_customer.png" alt="Adding Customer">
+    <br>
+    Fig. 7: Adding Customer
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/delete_customer.png" alt="Removing Customer">
+    <br>
+    Fig. 8: Removing Customer
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/product_settings.png" alt="Product Settings">
+    <br>
+    Fig. 9: Product Settings
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/add_product.png" alt="Adding Product">
+    <br>
+    Fig. 10: Adding Product
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center d-lg-block d-md-block d-xl-block d-none">
+    <img class="w-100" src="assets/img/coffeebank/delete_product.png" alt="Removing Product">
+    <br>
+    Fig. 11: Removing Product
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-12">
+    <hr>
+    <h2 id="usecase4">Setting a Password</h2>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      The fourth use case was to enable an administrator
+      to set a password, which is asked for before the settings
+      menu can be accessed. Although the environment is assumed
+      to be trusted enough so customers do not need any authentication,
+      it is not trusted enough to not have a password for the settings screen,
+      since users could remove their credit from their accounts or change
+      the credit of other users. This functionality should be exclusive to
+      a administrator.
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      The password can be set by clicking on the 'Password' menu item on the settings
+      screen, which open a simple dialog, where the password can be changed. By clicking
+      on the settings button seen in Fig. 2, the existence of a password is evaluated.
+      If a password exists, a dialog is shown, in which it must be entered. By entering a
+      wrong password, a Snackbar informing the user it, is shown, otherwise the settings
+      screen is opened. The password can be removed by entering an empty string in
+      the dialog that is used to change the password.
+    </p>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-12">
+    <hr>
+    <h2 id="usecase5">Creating a Report</h2>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      T.B.A.
+    </p>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-12">
+    <hr>
+    <h2 id="usecase6">Creating and Reading a Backup</h2>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      T.B.A.
+    </p>
   </div>
 </div>
 
