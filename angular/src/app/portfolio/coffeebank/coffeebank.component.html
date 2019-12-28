@@ -88,18 +88,73 @@
 </div>
 
 
-<div class="row">
+<div class="row mt-5">
   <div class="col-12">
     <hr>
-    <h2 id="usecase2">Nullifying transactions</h2>
+    <h2 id="usecase2">Nullifying Transactions</h2>
     <hr>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12">
+    <p class="text-justify">
+      The second use case of this application was to enable an
+      administrator to remove unwanted transactions. E.g. transactions
+      that were made unintentionally or by mistake.
+    </p>
+    <p class="text-justify">
+      To implement this use case, a settings screen was implemented. The
+      setting in the scope of this use case, is the "Transactions" setting.
+      By clicking on it, the application navigates to a list of the last 1000
+      transactions that have been made, sorted descending by date, or in other words,
+      the latest transactions is listed as the first one. The settings screen can be seen
+      in Fig. 4, whereas the list of transactions is displayed in Fig. 5.
+    </p>
+    <p class="text-justify">
+      When a transaction is removed the following steps are executed:
+    </p>
+      <ol>
+        <li>Is the product with 'uid == productId' available?
+          <ol style="list-style-type: none">
+            <li>Yes: Increase the stock value by one</li>
+            <li>No: Do nothing</li>
+          </ol>
+        </li>
+        <li>Is the customer with 'uid == customerId' available?
+          <ol style="list-style-type: none">
+            <li>Yes: Decrease customers credit by 'productPrice'</li>
+            <li>No: Do nothing</li>
+          </ol>
+        </li>
+        <li>
+          Delete transaction
+        </li>
+      </ol>
+    <p class="text-justify">
+
+    </p>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+    <img class="w-100" src="assets/img/coffeebank/settings.png" alt="Settings">
+    <br>
+    Fig. 4: Settings
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+    <img class="w-100" src="assets/img/coffeebank/transactions.png" alt="Transaction Listing">
+    <br>
+    Fig. 5: Listing of transactions
   </div>
 </div>
 
 
 <div class="row mt-5">
-  <div class="col-lg-6 col-md-12 col-sm-12">
-    <p class="text-justify">
-    </p>
+  <div class="col-12">
+    <hr>
+    <h2 id="usecase3">Modifying Customers</h2>
+    <hr>
   </div>
 </div>
+
+<div class="row mb-5"></div>
