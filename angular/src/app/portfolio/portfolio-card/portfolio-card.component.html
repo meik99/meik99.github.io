@@ -1,0 +1,8 @@
+<div class="card portfolio-card" >
+  <img class="card-img-top portfolio-card-img" [src]="imgSrc" alt="CoffeeBank Settings" [alt]="imgAlt">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text"><ng-content></ng-content></p>
+    <a [routerLink]="link" class="btn btn-primary" [class.disabled]="!isAvailable">{{isAvailable ? 'Details' : 'Coming soon'}}</a>
+  </div>
+</div>

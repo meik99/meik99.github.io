@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CoffeebankComponent } from './portfolio/coffeebank/coffeebank.component';
+import { PortfolioCardComponent } from './portfolio/portfolio-card/portfolio-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PortfolioComponent,
-    CoffeebankComponent
+    CoffeebankComponent,
+    PortfolioCardComponent
   ],
   imports: [
     BrowserModule,
