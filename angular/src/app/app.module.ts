@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MastheadComponent } from './masthead/masthead.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RoutingComponent } from './navigation/routing/routing.component';
+import { MeComponent } from './me/me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MastheadComponent,
     NavigationComponent,
-    RoutingComponent
+    RoutingComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,
