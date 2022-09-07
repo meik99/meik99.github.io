@@ -1,6 +1,5 @@
-<app-navbar></app-navbar>
+<app-masthead (onDrawer)="navigationComponent?.toggleDrawer()"></app-masthead>
 
-<div class="container">
+<app-navigation>
   <router-outlet></router-outlet>
-</div>
-
+</app-navigation>

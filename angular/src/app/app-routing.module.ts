@@ -1,23 +1,7 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {PortfolioComponent} from './portfolio/portfolio.component';
-import {CoffeebankComponent} from './portfolio/coffeebank/coffeebank.component';
+import { RouterModule, Routes } from '@angular/router';
 
-
-const routes: Routes = [
-  {
-    path: 'coffeebank',
-    component: CoffeebankComponent
-  },
-  {
-    path: '',
-    component: PortfolioComponent
-  },
-  {
-    path: '**',
-    component: PortfolioComponent
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

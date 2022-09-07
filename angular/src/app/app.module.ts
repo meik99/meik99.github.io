@@ -1,20 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { CoffeebankComponent } from './portfolio/coffeebank/coffeebank.component';
-import { PortfolioCardComponent } from './portfolio/portfolio-card/portfolio-card.component';
+import { MastheadComponent } from './masthead/masthead.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { RoutingComponent } from './navigation/routing/routing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    PortfolioComponent,
-    CoffeebankComponent,
-    PortfolioCardComponent
+    MastheadComponent,
+    NavigationComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,
