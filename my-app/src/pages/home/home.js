@@ -1,6 +1,6 @@
 import "./home.scss";
 import { NavLink, useNavigate } from "react-router-dom";
-import settings from "../assets/img/coffeebank/settings_thumbnail.png";
+import settings from "../../assets/img/coffeebank/settings_thumbnail.png";
 import { useCallback } from "react";
 
 function Home() {
