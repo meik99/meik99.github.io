@@ -7,10 +7,24 @@ import {
     Settings,
     Transactions
 } from "../../assets/img/coffeebank";
+import {NavLink} from "react-router-dom";
 
 function CoffeeBank() {
     return (
         <div className="container w-700">
+            <div className="row">
+                <div className="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item">
+                                <NavLink to="/">Home</NavLink>
+                            </li>
+                            <li className="breadcrumb-item active" aria-current="page">CoffeeBank</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
             <div className="row mt-4">
                 <div className="col-12">
                     <h1>CoffeeBank</h1>

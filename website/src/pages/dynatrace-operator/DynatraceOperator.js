@@ -1,6 +1,21 @@
+import {NavLink} from "react-router-dom";
+
 function DynatraceOperator() {
     return (
         <div className="container w-700 text-justify">
+            <div className="row">
+                <div className="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item">
+                                <NavLink to="/">Home</NavLink>
+                            </li>
+                            <li className="breadcrumb-item active" aria-current="page">Dynatrace Operator</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
             <div className="row mt-4">
                 <div className="col-12">
                     <h1>Dynatrace Operator</h1>
