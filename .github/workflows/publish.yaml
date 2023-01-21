@@ -13,7 +13,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build website
-        run: cd website && npm run build
+        run: |
+          cd website 
+          npm install
+          npm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1
