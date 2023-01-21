@@ -3,7 +3,7 @@ import {useCallback} from "react";
 
 function PortfolioCard({title, description, imgSrc, link}) {
     const navigate = useNavigate();
-    const onClick = useCallback(() => navigate(link), [navigate]);
+    const onClick = useCallback(() => navigate(link), [navigate, link]);
 
     return (
         <div className="card mt-4" onClick={onClick}>
