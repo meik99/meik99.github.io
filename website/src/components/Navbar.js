@@ -13,7 +13,11 @@ function Navbar() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <NavLink to="/"
-                                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>                                
+                                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/about"
+                                    className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>About</NavLink>
                             </li>
                         </ul>
                     </div>

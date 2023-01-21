@@ -6,6 +6,11 @@ import {DynatraceLogo} from "../../assets/img/dto";
 function Home() {
     return (
         <div className="container">
+            <div className="row mb-5">
+                <div className="col-12">
+                    <h1>Projects</h1>
+                </div>
+            </div>
             <PortfolioCard
                 title="CoffeeBank"
                 description="An Android app to manage customers, products and transactions."
