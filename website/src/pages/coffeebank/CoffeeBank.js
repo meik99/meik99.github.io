@@ -1,4 +1,3 @@
-import "./coffeebank.scss";
 import {
     AddCustomer, AddProduct,
     Customers,

@@ -1,5 +1,17 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .card {
-    border: none;
+    border: 1px solid #F6F6F6;
+}
+
+.no-style {
+    list-style-type: none;
+}
+
+.w-700{
+    max-width: 700px;
+}
+
+.text-justify {
+    text-align: justify;
 }

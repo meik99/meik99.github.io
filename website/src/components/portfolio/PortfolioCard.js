@@ -1,7 +1,8 @@
 import {NavLink, useNavigate} from "react-router-dom";
 import {useCallback} from "react";
+import Pill from "../Pill";
 
-function PortfolioCard({title, description, imgSrc, link}) {
+function PortfolioCard({title, description, imgSrc, link, tags= []}) {
     const navigate = useNavigate();
     const onClick = useCallback(() => navigate(link), [navigate, link]);
 
@@ -13,7 +14,16 @@ function PortfolioCard({title, description, imgSrc, link}) {
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
-                        <h5 className="card-title">{title}</h5>
+                        <h4 className="card-title">{title}</h4>
+                        <h6 className="card-subtitle mb-2 text-muted">
+                            Tags:
+                            <span className="ms-2"></span>
+                            {
+                                tags.map(tag => (
+                                    <Pill text={tag}></Pill>
+                                ))
+                            }
+                        </h6>
                         <p className="card-text">
                             {description}
                         </p>
