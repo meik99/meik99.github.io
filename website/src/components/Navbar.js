@@ -1,11 +1,11 @@
-import { Link, Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">RynkBit</a>
+                    <a className="navbar-brand" href="/">RynkBit</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
