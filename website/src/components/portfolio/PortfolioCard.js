@@ -9,10 +9,10 @@ function PortfolioCard({title, description, imgSrc, link, tags= []}) {
     return (
         <div className="card mt-4" onClick={onClick}>
             <div className="row g-0">
-                <div className="col-md-2">
+                <div className="col-4 col-xs-2 col-sm-4 col-md-2 m-auto">
                     <img src={imgSrc} className="img-fluid rounded-start" alt="..." />
                 </div>
-                <div className="col-md-8">
+                <div className="col-8 col-md-10">
                     <div className="card-body">
                         <h4 className="card-title">{title}</h4>
                         <h6 className="card-subtitle mb-2 text-muted">
