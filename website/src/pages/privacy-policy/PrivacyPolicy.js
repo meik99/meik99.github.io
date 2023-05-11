@@ -1,11 +1,9 @@
+import { useParams } from "react-router-dom";
 import "./PrivacyPolicy.scss"
 import { privacyPolicyHtml } from "./data";
 
 const PrivacyPolicy = () => {
-    const queryParameters = new URLSearchParams(window.location.search)
-    const app = queryParameters.get("app")
-
-    console.log(app)
+    const { app } = useParams()
 
     return (
         <div className="container">

@@ -16,7 +16,7 @@ function App() {
           <Route path="/coffeebank" element={<CoffeeBank />} />
           <Route path="/dynatrace-operator" element={<DynatraceOperator />} />
           <Route path="/about" element={<About />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy-policy/:app" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>
