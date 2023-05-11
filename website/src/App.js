@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './pages/home/Home';
 import CoffeeBank from "./pages/coffeebank/CoffeeBank";
@@ -9,7 +9,7 @@ import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Navbar />}>
           <Route index element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/privacy-policy/:app" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
