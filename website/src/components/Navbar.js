@@ -20,7 +20,7 @@ function Navbar() {
                                     className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/privacy-policy"
+                                <NavLink to="/privacy-policy/RynkBit"
                                     className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>Privacy Policy</NavLink>
                             </li>
                         </ul>
